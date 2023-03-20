@@ -26,7 +26,6 @@ import java.util.List;
 public class PaymentController {
     @Value("${server.port}")
     private String serverPort;
-
     @Resource
     private PaymentService paymentService;
 
@@ -41,7 +40,7 @@ public class PaymentController {
 
         if(result > 0) {
             //return new CommonResult(200,"插入数据库成功",result);
-            return new CommonResult(200,"插入数据库成功,返回结果"+ result + "\t 服务端口：" + serverPort,result);
+            return new CommonResult(200,"插入数据库成功,返回结果"+ result + "\t 服务端口：" + serverPort,payment);
         }else{
             return new CommonResult(444,"插入数据库失败",null);
         }
@@ -72,6 +71,5 @@ public class PaymentController {
         }
         return this.discoveryClient;
     }
-
 
 }
