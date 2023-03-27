@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.lengbingkeji.springcloud.dao.PaymentDao">
-    <resultMap id="BaseResultMap" type="com.lengbingkeji.springcloud.entities.Payment">
+<mapper namespace="com.lengbingkeji.springcloudalibaba.dao.PaymentDao">
+    <resultMap id="BaseResultMap" type="com.lengbingkeji.springcloudalibaba.entities.Payment">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
